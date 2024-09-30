@@ -56,15 +56,15 @@ num3 = int(input("Enter third number: "))
 even = 0
 odd = 0
 if num1 % 2 == 0:
-    even = even + 1
+    even += 1
 else:
-    odd = odd + 1
+    odd += 1
 if num2 % 2 == 0:
-    even = even + 1
+    even += 1
 else:
-    odd = odd + 1
+    odd += 1
 if num3 % 2 == 0:
-    even = even + 1
+    even += 1
 else:
-    odd = odd + 1
+    odd += 1
 print(f"there are {even} amount of even numbers and there are {odd} amount of odd numbers")
