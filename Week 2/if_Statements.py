@@ -1,15 +1,31 @@
 ##Task 1
+#
+# book = input("enter type of book")
+# if book == "adventure":
+#     print("i like adventure books!")
+# print("finish reading book!")  ##outside of if loop to print no matter the input
+#
+# ##Task 2
+#
+# activity = input("enter an activity")
+# if activity == "calculate":
+#     print("performing calculations")
+# else:
+#     print("performing activity")
+# print("Activity completed!")
 
-book = input("enter type of book")
-if book == "adventure":
-    print("i like adventure books!")
-print("finish reading book!")  ##outside of if loop to print no matter the input
+##Task 3
 
-##Task 2
-
-activity = input("enter an activity")
-if activity == "calculate":
-    print("performing calculations")
+direction = input("enter a direction (up, left, down, right)")
+holder = "down"
+if direction == "up":
+    holder = "upwards"
+elif direction == "left":
+    holder = "leftwards"
+elif direction == "right":
+    holder = "rightwards"
 else:
-    print("performing activity")
-print("Activity completed!")
+    print("Invalid direction")
+    exit()
+
+print (f"i am moving {holder}")
