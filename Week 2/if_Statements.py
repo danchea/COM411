@@ -38,12 +38,33 @@
 #     print("Odd")
 #
 ##Task 5
+#
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))
+# if num1 > num2:
+#     print("First number is greater than second number")
+# elif num2 > num1:
+#     print("Second number is greater than first number")
+# else:
+#     print("they are equal")
+
+##Task 6
 
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
-if num1 > num2:
-    print("First number is greater than second number")
-elif num2 > num1:
-    print("Second number is greater than first number")
+num3 = int(input("Enter third number: "))
+even = 0
+odd = 0
+if num1 % 2 == 0:
+    even = even + 1
 else:
-    print("they are equal")
+    odd = odd + 1
+if num2 % 2 == 0:
+    even = even + 1
+else:
+    odd = odd + 1
+if num3 % 2 == 0:
+    even = even + 1
+else:
+    odd = odd + 1
+print(f"there are {even} amount of even numbers and there are {odd} amount of odd numbers")
