@@ -31,8 +31,19 @@
 # print (f"i am moving {holder}")
 
 ##Task 4
-number =  int(input("Enter a whole number: "))
-if number % 2 == 0:
-    print("Even")
+# number =  int(input("Enter a whole number: "))
+# if number % 2 == 0:
+#     print("Even")
+# else:
+#     print("Odd")
+#
+##Task 5
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+if num1 > num2:
+    print("First number is greater than second number")
+elif num2 > num1:
+    print("Second number is greater than first number")
 else:
-    print("Odd")
+    print("they are equal")
