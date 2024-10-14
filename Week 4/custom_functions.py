@@ -33,7 +33,7 @@
 
 # def cross_bridge (steps):
 #     if steps <= 5 and steps >= 0:
-#         for i in range(steps):
+#         for i in range(steps):git
 #             print("Crossed Step")
 #         print("We must keep going!")
 #     else:
@@ -45,10 +45,13 @@
 
 ## Task 7
 
-def climb_ladder(remaining,crossed):
-    if remaining >= crossed:
-        print("still some way to go")
-    else:
-        print("we are almost there")
-climb_ladder(5,2)
-climb_ladder(2,5)
+# def climb_ladder(remaining,crossed):
+#     if remaining >= crossed:
+#         print("still some way to go")
+#     else:
+#         print("we are almost there")
+# climb_ladder(5,2)
+# climb_ladder(2,5)
+
+## Task 8
+
