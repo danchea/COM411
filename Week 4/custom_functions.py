@@ -31,14 +31,24 @@
 
 ## Task 6
 
-def cross_bridge (steps):
-    if steps <= 5 and steps >= 0:
-        for i in range(steps):
-            print("Crossed Step")
-        print("We must keep going!")
+# def cross_bridge (steps):
+#     if steps <= 5 and steps >= 0:
+#         for i in range(steps):
+#             print("Crossed Step")
+#         print("We must keep going!")
+#     else:
+#         for i in range(steps):
+#             print("Crossed Step")
+#         print("the bridge is collapsing")
+# cross_bridge(3)
+# cross_bridge(6)
+
+## Task 7
+
+def climb_ladder(remaining,crossed):
+    if remaining >= crossed:
+        print("still some way to go")
     else:
-        for i in range(steps):
-            print("Crossed Step")
-        print("the bridge is collapsing")
-cross_bridge(3)
-cross_bridge(6)
+        print("we are almost there")
+climb_ladder(5,2)
+climb_ladder(2,5)
