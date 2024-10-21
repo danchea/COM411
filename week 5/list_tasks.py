@@ -10,6 +10,7 @@
 #
 # def run_task1():
 #     directions()
+from xml.sax.saxutils import escape
 
 
 # run_task1()
@@ -32,16 +33,41 @@
 
 ## Task 3
 
+# def directions():
+#     steps = ["move forward", "move backward", "turn left", "turn right"]
+#     return steps
+#
+# def menu():
+#     print("please select a direction")
+#     direction = directions()
+#     count = 0
+#     for d in direction:
+#         print(count,":",d)
+#         count += 1
+# menu()
+
+## Task 4
+
 def directions():
     steps = ["move forward", "move backward", "turn left", "turn right"]
     return steps
 
-def menu():
-    print("please select a direction")
-    direction = directions()
+def menu_and_outputs():
     count = 0
+    direction = directions()
     for d in direction:
-        print(count,":",d)
+        print(count, ":", d)
         count += 1
+    destination = int(input("please select a destination"))
+    return destination
 
-menu()
+def run_task4():
+    route = []
+    print("Working out escape route...")
+    for count in range(5):
+        menu_and_outputs()
+        route.append(steps[destination])
+    print(f"escape route:", route)
+run_task4()
+
+
