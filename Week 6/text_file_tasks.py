@@ -38,14 +38,31 @@
 
 ## Task 3
 
-def search(file_name):
-    print("Searching...")
-    with open(file_name) as f:
-        for line in f:
-            print("looked in",line.strip())
-        print("...Done")
+# def search(file_name):
+#     print("Searching...")
+#     with open(file_name) as f:
+#         for line in f:
+#             print("looked in",line.strip())
+#         print("...Done")
+#
+# def run_task3():
+#     search("library.txt")
+# run_task3()
 
-def run_task3():
-    search("library.txt")
+## Task 4
 
-run_task3()
+def searched_books(file_name):
+    print("searching...")
+    sections = ""
+    books = "Books:\n"
+    with open(file_name) as books_file:
+        print(books_file.read(7))
+        for line in books_file:
+            if books_file.read(7) == "Section":
+                sections += f"{line}\n"
+        print(sections)
+
+
+
+
+searched_books("books.txt")
